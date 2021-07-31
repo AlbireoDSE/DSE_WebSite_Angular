@@ -1,4 +1,5 @@
-
-.header-container {
-
+div.header-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }

@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarmenuComponent } from './features/layouts/navbar/navbarmenu/navbarmenu.component';
 import { FooterComponent } from './features/layouts/footer/footer.component';
+
+import { NavbarmenuModule } from './features/layouts/navbar/navbarmenu/navbarmenu.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarmenuComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    NavbarmenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

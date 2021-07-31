@@ -1,0 +1,37 @@
+div.dropdown-container{
+
+    ul.dropdown-menu{
+
+        list-style-type: none;
+
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 0;
+
+        li.dropnav-header{
+
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 14rem;
+            height: 4rem;
+
+            display: flex;
+            align-items: center;
+
+            a.dropnav-link{
+                margin-left: .5rem;
+                color: #fff;
+                font-size: 18px;
+            }
+
+            &:hover{
+
+                background-color: rgba(255, 255, 255, 0.8);
+                
+                a.dropnav-link{
+                    color: #000;
+                }
+            }
+        }
+    }
+}

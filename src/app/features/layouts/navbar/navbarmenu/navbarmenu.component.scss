@@ -1,0 +1,83 @@
+nav.nav-container {
+    height: 5rem;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+
+    border-bottom: .1rem solid #FFF;
+
+    //Flexbox
+    display: flex;
+    justify-content: flex-start; //place le contenu enfant à la position souhaitée
+    align-items: center;
+
+    ul.nav-menu {
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+
+        //Flex box
+        display : flex;
+        //justify-content: space-around; //j'hésite à laisser
+        
+        li.nav-header {
+            height: 100%;
+            width: 14rem;   
+
+            position: relative;
+
+            //Flexbox
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-bottom: .2rem solid transparent;
+
+            a.nav-header-title {
+                color: #fff;
+                font-size: 18px;
+            }
+
+            div.dropdown-container{
+                display: none;
+                position: absolute;
+
+                top: 103%;
+                left: 0;
+            }
+
+            &:hover { //s'applique sur l'élément parent
+                border-bottom: .2rem solid #FFF;
+                cursor: pointer;
+
+                div.dropdown-container{
+                    display: flex;                             
+                }
+            }
+        }
+    }
+
+    div.nav-brand {
+        height: 100%;
+        width: 30rem;
+        background-color: rgba(248, 51, 51, 0.5);
+
+        //Flexbox
+        display: flex;
+        flex-grow: 2;
+    }
+
+    div.nav-social-container{
+        width: 20rem;
+        height: 100%;
+        background-color: rgba(248, 51, 51, 0.5);
+
+        //Flexbox
+        display: flex;
+        align-items: center;
+    }
+}

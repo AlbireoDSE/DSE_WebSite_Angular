@@ -1,1 +1,19 @@
-<p>navbarmenu works!</p>
+<nav class="nav-container">
+    <div class="nav-brand">
+        <a>LOGO ICI</a>
+    </div>
+    <ul class="nav-menu">
+        <li class="nav-header" *ngFor="let link of navlinks">
+            <a class="nav-header-title">{{link.label}}</a>
+            <div class="dropdown-container" *ngIf="link.hasOwnProperty('droplinks')">
+                <dropdown-menu [dropnavLinks]="link.droplinks"></dropdown-menu>
+            </div>
+        </li>
+    </ul>    
+    
+    <div class="nav-social-container">
+        <ul class="nav-social-icons">
+            <a>RESEAUX SOCIAUX ICI</a>
+        </ul>
+    </div>
+</nav>

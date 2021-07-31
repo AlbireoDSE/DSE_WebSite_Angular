@@ -9,8 +9,21 @@ import { Router } from '@angular/router';
 export class NavbarmenuComponent implements OnInit {
 
   public navlinks: any[] = [
-    {link: 'gallery', label: 'Gallery'},
+    {link: 'gallery', label: 'Gallery', droplinks: 
+      [
+        {link: 'galaxies', label: 'Galaxies'}, 
+        {link: 'nebulae', label: 'Nebulae'},
+        {link: 'stars-clusters', label: 'Stars Clusters'},
+        {link: 'interstellar-voyagers', label: 'Interstellar voyagers'},
+        {link: 'moon', label: 'Moon'},
+        {link: 'planets', label: 'Planets'},
+        {link: 'stars', label: 'Stars'},
+        {link: 'others', label: 'Others...'},
+      ]
+    },
     {link: 'diy', label: 'DIY'},
+    {link: 'tools', label: 'Tools'},
+    {link: 'gear', label: 'My gear'},
     {link: 'about', label: 'About'}
   ];
 
@@ -18,5 +31,11 @@ export class NavbarmenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  public onLinkClick(link: string): void {
+    this.router.navigate([link]);
+  }
+
+  
 
 }
