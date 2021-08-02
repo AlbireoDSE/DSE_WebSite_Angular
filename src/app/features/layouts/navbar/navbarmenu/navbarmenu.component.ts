@@ -13,11 +13,12 @@ export class NavbarmenuComponent implements OnInit {
       [
         {link: 'galaxies', label: 'Galaxies'}, 
         {link: 'nebulae', label: 'Nebulae'},
-        {link: 'stars-clusters', label: 'Stars Clusters'},
+        {link: 'star-clusters', label: 'Star Clusters'},
         {link: 'interstellar-voyagers', label: 'Interstellar voyagers'},
         {link: 'moon', label: 'Moon'},
         {link: 'planets', label: 'Planets'},
         {link: 'stars', label: 'Stars'},
+        {link: 'gear', label: 'Gear'},
         {link: 'others', label: 'Others...'},
       ]
     },

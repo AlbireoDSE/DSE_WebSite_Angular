@@ -3,12 +3,10 @@ div.footer-container{
     
     background-color: rgb(15, 15, 15);
 
-    border-top: .15rem solid #fff;
+    border-top: .01rem solid #fff;
 
     display: flex;
     flex-direction: column;
-    
-
 
     div.footer-content{
         //min-height: 5rem;
@@ -19,16 +17,25 @@ div.footer-container{
             
             justify-content: space-around;
 
-            div.about-container{
 
-                div.about-text{
-                    font-size: 10px;
-                }
-
-            }
 
         }
 
+    }
+
+    div.contact-container{
+
+        div.email-container{
+            div.email-h{
+                
+            }
+
+            div.email-c{
+
+            } 
+        }
+
+        
     }
 
     div.copyrights-container{
@@ -43,25 +50,19 @@ div.footer-container{
         align-items: center;
 
         span.copyrights{
-            color: #fff;
+            
         }
     }
     
-}
-
-p{
-    font-size: 10px;
-    color: #fff;
 }
 
 span.col-title{
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    font-size: 15px;
-    color: #fff;
-    //font-style: bold;    
-}
+    font-size: 16px;
+    //font-style: bold; 
+}   
 
 div{
 
@@ -77,7 +78,7 @@ div{
 
     .col-w{
         width: 15rem;
-        background-color: rgb(223, 57, 57);
+        //background-color: rgb(223, 57, 57);
     }
 
 }

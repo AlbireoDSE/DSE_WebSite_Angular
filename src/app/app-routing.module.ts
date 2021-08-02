@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./features/home/home.module').then((module) => module.HomeModule)
   },
   {
+    path: 'gallery', 
+    loadChildren: () => import('./features/gallery/gallery.module').then((module) => module.GalleryModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

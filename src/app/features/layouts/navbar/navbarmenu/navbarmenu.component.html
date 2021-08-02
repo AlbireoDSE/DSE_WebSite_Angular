@@ -3,7 +3,7 @@
         <a>LOGO ICI</a>
     </div>
     <ul class="nav-menu">
-        <li class="nav-header" *ngFor="let link of navlinks">
+        <li class="nav-header" *ngFor="let link of navlinks" (click)="onLinkClick(link.link)">
             <a class="nav-header-title">{{link.label}}</a>
             <div class="dropdown-container" *ngIf="link.hasOwnProperty('droplinks')">
                 <dropdown-menu [dropnavLinks]="link.droplinks"></dropdown-menu>
