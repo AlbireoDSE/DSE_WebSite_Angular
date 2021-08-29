@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  public display:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

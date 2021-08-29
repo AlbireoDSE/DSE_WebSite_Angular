@@ -1,9 +1,22 @@
 
-<div class="gallery-container">
-    <div class="filter-container">
-
+<div class="gallery-container deep-grey-bckg">
+    <div class="filterbar-container">
+        <p-sidebar [(visible)]="display" position="top" styleClass="p-sidebar-sm">
+            <app-filter></app-filter>
+        </p-sidebar>
     </div>
-    <div class="pictures-container">
+    <div class="options-container grey-bckg">
+        <div class="filter-container option-item">
+            <button pButton pRipple (click)="display = true" type="button" icon="pi pi-filter" class="p-button-rounded p-button-outlined p-button-plain" styleClass="p-button-lg"></button>
+        </div>
+        <div class="stats-container option-item">
+            <button pButton pRipple type="button" icon="pi pi-filter" class="p-button-rounded p-button-outlined" styleClass="p-button-lg"></button>
+        </div>
         
     </div>
+    <div class="pictures-container">
+        <app-pictures-view></app-pictures-view>
+    </div>
+    
+    
 </div>

@@ -1,5 +1,48 @@
 div.gallery-container{
-    background-color: rgb(28, 31, 32);
     width: 100%;
     min-height: 100vh;
+
+    div.options-container{
+
+        position: -webkit-sticky;
+        position: fixed;
+        min-height: 18rem;
+        width: 4rem;
+        left: 1.5rem;
+        top: calc(100vh / 2);
+        transform: translateY(-50%);
+
+        padding: .5rem;
+
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.527);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        div.filter-container{
+            
+        }
+
+        div.stats-container{
+            
+        }
+
+        .option-item{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    div.pictures-container{
+        width: 100%;
+        height: 100vh;
+        padding-top: 5rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
 }
