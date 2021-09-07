@@ -1,6 +1,12 @@
 <div id="filter-container">
-    <span class="p-float-label">
-        <input class="p-inputtext-sm" pInputText type="text" >
-        <label for="inputtext">Name</label>
-    </span>
+    <form class="filter-form">
+        <span class="p-float-label">
+            <input class="p-inputtext-sm" pInputText type="text" >
+            <label for="inputtext">Name</label>
+        </span>
+        <span class="p-float-label">
+            <p-dropdown inputId="dropdown" [autoDisplayFirst]="false" optionLabel="Catalog"></p-dropdown>
+            <label for="dropdown">by catalog</label>
+        </span>
+    </form>
 </div>

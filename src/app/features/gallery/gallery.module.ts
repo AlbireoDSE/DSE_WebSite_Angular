@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GalleryComponent } from './gallery.component';
 import { GalleryRoutingModule } from './gallery-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SidebarModule} from 'primeng/sidebar';
 
@@ -18,7 +19,9 @@ import { PicturesViewComponent } from './pictures-view/pictures-view.component';
     GalleryRoutingModule,
     SidebarModule,
     SharedModule,
-    PicturesViewModule
+    PicturesViewModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class GalleryModule { }
