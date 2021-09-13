@@ -6,14 +6,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SidebarModule} from 'primeng/sidebar';
 
-
 import { SharedModule } from '../../shared/shared-module.module';
 import { FilterComponent } from './filter/filter.component';
 import { PicturesViewModule } from './pictures-view/pictures-view.module';
-import { PicturesViewComponent } from './pictures-view/pictures-view.component';
 
 @NgModule({
-  declarations: [GalleryComponent, FilterComponent, PicturesViewComponent],
+  declarations: [
+    GalleryComponent,
+    FilterComponent
+  ],
   imports: [
     CommonModule,
     GalleryRoutingModule,

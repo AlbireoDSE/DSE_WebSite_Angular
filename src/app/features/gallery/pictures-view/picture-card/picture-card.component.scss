@@ -1,0 +1,50 @@
+.card-container{
+    background-color: rgb(89, 89, 255);
+    width: 34rem;
+    height: 21rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+    position: relative;
+
+    &:hover{
+        .info-container{
+            display: none;
+        }
+    }
+
+
+    .picture-container{
+
+    }
+
+    .title-container{
+        background-color: red;
+    }
+
+    .info-container{
+        background-color: red;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 0.938rem;
+        height: 2.7rem;
+
+        flex-direction: row-reverse;
+
+        position: absolute;
+        display: flex;
+        align-items: center;
+
+        .icon-container{
+            //margin-left: 1.5rem;
+            margin-right: 1.5rem;
+
+            .icon{
+                margin-right: .5rem;
+                margin-left: .5rem;
+            }
+        }
+
+    }
+}
