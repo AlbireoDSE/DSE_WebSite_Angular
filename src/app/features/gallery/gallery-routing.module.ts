@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
-import { GalleryComponent } from './gallery.component';
+import { GalleryDetailComponent } from './gallery-detail/gallery-detail.component';
+import { GalleryComponent } from './gallery-list/gallery.component';
 
 const routes: Routes = [
 {
     path:'',
     component: GalleryComponent
+},
+{
+    path:':id',
+    component: GalleryDetailComponent
 }
 ];
 

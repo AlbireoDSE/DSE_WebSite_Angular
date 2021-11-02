@@ -1,0 +1,25 @@
+div.description-container{
+    //height: 50rem;
+
+    div.title-sheet{        
+        
+        .title{
+            display: block;
+            width: 100%;
+            padding-bottom: .75rem;
+        }
+    }
+
+    div.content-sheet{
+        margin-top: .5rem;
+    }
+}
+
+.padding-sheet{
+    padding: 1rem 1rem;
+}  
+
+.border-sheet{
+    border: .15rem solid rgb(163, 163, 163);
+    border-radius: 15px;
+}
