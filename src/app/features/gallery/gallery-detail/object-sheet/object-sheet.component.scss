@@ -7,11 +7,35 @@ div.obj-info-container{
             display: block;
             width: 100%;
             padding-bottom: .75rem;
+            font-size: 18px;
+            letter-spacing: 1px;
         }
     }
 
     div.content-sheet{
         margin-top: .5rem;
+
+        ul.content-list{
+           list-style-type: none; 
+           
+           li{
+                margin: .7rem 0;
+                display: flex;
+                letter-spacing: 1px;
+                .h-cont{
+                    min-width: 40%;
+                }
+
+                .m-cont{
+                    
+                }
+           }
+
+           ul.coord-list{
+               margin: 0;
+               padding: 0;
+           }
+        }
     }
 }
 

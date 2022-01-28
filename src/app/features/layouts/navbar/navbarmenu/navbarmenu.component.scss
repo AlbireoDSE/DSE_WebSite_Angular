@@ -1,5 +1,5 @@
 nav.nav-container {
-    height: 5rem;
+    height: 3.5rem;
     width:100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding-left: 50px;
@@ -47,12 +47,12 @@ nav.nav-container {
                 display: none;
                 position: absolute;
 
-                top: 103%;
+                top: 105%;
                 left: 0;
             }
 
             &:hover { //s'applique sur l'élément parent
-                border-bottom: .2rem solid #FFF;
+                border-bottom: .15rem solid #FFF;
                 cursor: pointer;
 
                 div.dropdown-container{

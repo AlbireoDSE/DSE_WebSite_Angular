@@ -7,11 +7,61 @@ div.techn-sht-container{
             display: block;
             width: 100%;
             padding-bottom: .75rem;
+            font-size: 18px;
         }
     }
 
     div.content-sheet{
         margin-top: .5rem;
+        display: flex;
+        flex-direction: row;
+
+        div.section{
+            width: 100%;
+        }
+
+        ul.content-list{
+            list-style-type: none;
+
+            li.content-line{
+                margin: .7rem 0;
+                letter-spacing: 1px;
+
+                display: flex;
+
+                &.mult-lines{
+                    flex-direction: column;
+                }
+                
+                .h-cont{
+                    min-width: 40%;
+                }
+
+                .m-cont{
+                    
+                }
+
+                ul.sub-list{
+                    margin-top: .5rem;
+                    list-style-type: disc;
+
+                    li.sub-content-line{
+
+                        margin: .7rem 0;
+
+                        .sub-h-cont{
+                          font-size: 15px;  
+                        }
+
+                        .sub-m-cont{
+                            margin-left: .3rem;
+                            font-size: 15px;
+                        }
+                    }
+
+                }
+           }
+        }
     }
 }
 

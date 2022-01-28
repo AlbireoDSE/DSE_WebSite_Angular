@@ -23,7 +23,12 @@ export class NavbarmenuComponent implements OnInit {
       ]
     },
     {link: 'diy', label: 'DIY'},
-    {link: 'tools', label: 'Tools'},
+    {link: 'tools', label: 'Tools', droplinks: 
+      [
+        {link: 'astrometry', label: 'Astrometry'},
+        {link: 'calculators', label: 'Calculators'}
+      ]
+    },
     {link: 'gear', label: 'My gear'},
     {link: 'about', label: 'About'}
   ];
