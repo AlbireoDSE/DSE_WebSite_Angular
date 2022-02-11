@@ -54,6 +54,28 @@ div.footer-container{
         }
     }
     
+    div.socials-container{
+
+        section.socials-section{
+            display: flex;
+            justify-content: space-between;
+            width: 7rem;
+
+            fa-icon.fa-social-icon{
+                color: #fff;
+                transition: 0.3s;
+
+                &:hover{
+                cursor: pointer;
+                color: rgba(255, 255, 255, 0.5);
+                
+            }
+            }
+
+            
+        }
+    }
+
 }
 
 span.col-title{

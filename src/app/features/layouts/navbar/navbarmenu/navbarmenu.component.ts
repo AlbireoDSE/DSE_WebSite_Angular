@@ -18,17 +18,12 @@ export class NavbarmenuComponent implements OnInit {
         {link: 'moon', label: 'Moon'},
         {link: 'planets', label: 'Planets'},
         {link: 'stars', label: 'Stars'},
-        {link: 'gear', label: 'Gear'},
+        {link: 'rigs', label: 'Astronomy rigs'},
         {link: 'others', label: 'Others...'},
       ]
     },
-    {link: 'diy', label: 'DIY'},
-    {link: 'tools', label: 'Tools', droplinks: 
-      [
-        {link: 'astrometry', label: 'Astrometry'},
-        {link: 'calculators', label: 'Calculators'}
-      ]
-    },
+    {link: 'rsc', label: 'Ressources'},
+    {link: 'tools', label: 'Tools'},
     {link: 'gear', label: 'My gear'},
     {link: 'about', label: 'About'}
   ];

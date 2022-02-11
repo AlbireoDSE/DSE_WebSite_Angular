@@ -1,120 +1,193 @@
 div.homepage-container{
-    //height: 100vh;
-    //width: 100%;
-    //background-color: rgb(0, 113, 128)
-}
+    section.welcome-page-img{
 
+        div.top-img{
+            width:100%;
+            height: 100vh;
+            
+            background-image: url("/assets/ressources/imgs/49773507818_900c2f16df_k.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            div.top-div{
+                padding-left: 2rem;
+            
+                float: left;
+                margin-top: 16rem;
+                margin-left: 11rem;
+                
+            
+                //Flexbox 
+                display: flex;
+                flex-direction: column;
+                
+            
+                div.welcomepage-header-container{
+                    
+                    padding-top: .5rem;
+                    padding-bottom: .5rem;
+                  
+                    div.welcomepage-title{
+                        
+                        animation: fade-slide-right 0.5s 0.5s ease-out forwards;
+                        opacity: 0; 
 
+                        h2{
+                            color: #fff;
+                            font-style: normal;
+                            font-size: 45px;
+                            letter-spacing: 4px;
+                            word-spacing: 4px;
+                        }
+                    }
+            
+                    div.welcomepage-jobs{
+            
+                        padding-top: .5rem;
+                        padding-bottom: .5rem;
+            
+                        animation: fade-slide-right 0.55s 0.55s ease-out forwards;
+                        opacity: 0; 
 
-div.top-img{
-    width:100%;
-    height: 100vh;
-    
-    background-image: url("/assets/ressources/imgs/49773507818_900c2f16df_k.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    //filter: blur(3px); //retire la navbar, bug?
+                        h4{
+                            color: #fff;
+                            font-size: 13px;
+                            font-style: italic;
+                            letter-spacing: 2px;
+                            word-spacing: 4px;
+                        }
+                    }
+                }
+            
+                div.welcomepage-description{
+            
+                    margin-left: 2rem;
+                    min-height: 15rem;
+            
+                    animation: fade-slide-right 0.6s 0.6s ease-out forwards;
+                    opacity: 0; 
+
+                    .description{
+                        padding: .5rem 0rem; //top-bottom and left-right
+            
+                        color: #fff;
+                        font-size: 20px;
+                        font-style: italic;
+                        letter-spacing: 3px;
+                        line-height: 35px;
+                        padding-top: 4rem;
+                    }
+                }    
+                div.welcomepage-socialicons{
+            
+                    height: 15rem;
+                
+                    //Flexbox
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    div.w-social-icon{
+                
+                        width: 3.3rem;
+                        height: 3.3rem;
+                
+                        //background-color: rgba(0, 0, 0, .5);
+                        /* border-color: white;
+                        border-width: .1rem;
+                        border-style: solid;
+                        border-radius: 8px; */
+
+                        display: flex;
+                        justify-content:center;
+                        align-items: center;
+
+                        fa-icon.fa-social-icon{
+                            color: #fff;
+
+                            transition: 0.3s;
+                            animation: fade 0.65s 0.65s ease-out forwards;
+                            opacity: 0;
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+
+                            fa-icon.fa-social-icon{
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+
+        section.drop-arrow-section{
+
+            position: absolute;   
+            bottom: 4vh;
+            z-index: 10;
+
+            text-align: center;
+            left: 0;
+            right: 0;
+
+            img.drop-arrow{
+                width: 4rem;
+
+                animation: fade-slide-up 1s 1s ease-out forwards;
+                opacity: 0;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    div.home-content{
+        
+    }
 }
 
 .l-border{
     border-left: .2rem solid #fff; 
     padding-left: 1rem;
+
+    animation: fade-slide-right 0.3s 0.3s ease-out forwards;
+    opacity: 0; 
+
 }
 
-
-div.welcomepage-socialicons{
-
-    height: 15rem;
-
-    //Flexbox
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    div.w-social-icon{
-
-        width: 50px;
-        height: 50px;
-
-        background-color: rgba(0, 0, 0, .5);
-        border-color: white;
-        border-width: .1rem;
-        border-style: solid;
-        border-radius: 8px;
-    } 
-}
-
-
-div.top-div{
-    //width: 100%;
-    //height: 100%;
-    padding-left: 2rem;
-
-    float: left;
-    margin-top: 16rem;
-    margin-left: 11rem;
-    //position: absolute;
-    //top: 16rem;
-    //left: 11rem;
-
-    //z-index: 2;
-   
-    //background-color: rgba(20, 20, 20, 0.3);
-
-    //Flexbox 
-    display: flex;
-    flex-direction: column;
-    
-
-    div.welcomepage-header-container{
-        
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-      
-        
-
-        div.welcomepage-title{
-
-            h2{
-                color: #fff;
-                font-style: normal;
-                font-size: 45px;
-                letter-spacing: 4px;
-                word-spacing: 4px;
-            }
-        }
-
-        div.welcomepage-jobs{
-
-            padding-top: .5rem;
-            padding-bottom: .5rem;
-
-            h4{
-                color: #fff;
-                font-size: 13px;
-                font-style: italic;
-                letter-spacing: 2px;
-                word-spacing: 4px;
-            }
-        }
+@keyframes fade-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(4rem);
     }
-
-    div.welcomepage-description{
-
-        margin-left: 2rem;
-        min-height: 15rem;
-
-        .description{
-            padding: .5rem 0rem; //top-bottom and left-right
-
-            color: #fff;
-            font-size: 20px;
-            font-style: italic;
-            letter-spacing: 3px;
-            line-height: 35px;
-            padding-top: 4rem;
-        }
-    }    
-    
+    100% {
+      opacity: 1;
+      transform: none;
+    }
 }
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fade-slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+

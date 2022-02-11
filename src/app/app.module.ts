@@ -3,30 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './features/layouts/footer/footer.component';
+//import { FooterComponent } from './features/layouts/footer/footer.component';
 import { GalleryModule } from './features/gallery/gallery.module';
 
 import { NavbarmenuModule } from './features/layouts/navbar/navbarmenu/navbarmenu.module';
+import {FooterModule } from './features/layouts/footer/footer.module';
 
-import { SharedModule } from './shared/shared-module.module';
-import {SidebarModule} from 'primeng/sidebar'; 
+import {RippleModule} from 'primeng/ripple';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FooterComponent, 
+    AppComponent
   ],
 
   imports: [
-    //SharedModule,
     BrowserModule,
     AppRoutingModule,
     NavbarmenuModule,
     GalleryModule,
-    SidebarModule,
+    RippleModule,
     BrowserAnimationsModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

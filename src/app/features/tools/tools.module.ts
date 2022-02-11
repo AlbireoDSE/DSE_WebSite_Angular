@@ -5,6 +5,7 @@ import { ToolsRoutingModule} from './tools-routing.module';
 import { AstrometryComponent } from './astrometry/astrometry.component';
 import { CalculatorsComponent } from './calculators/calculators.component'
 
+import { IconsModule } from 'src/app/shared/icons-module.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CalculatorsComponent } from './calculators/calculators.component'
   ],
   imports: [
     CommonModule,
-    ToolsRoutingModule
+    ToolsRoutingModule,
+    IconsModule
   ]
 })
 export class ToolsModule { }
