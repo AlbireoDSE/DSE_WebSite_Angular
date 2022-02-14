@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './features/about/about.component';
 
 const routes: Routes = [
   {
@@ -11,8 +12,20 @@ const routes: Routes = [
     loadChildren: () => import('./features/gallery/gallery.module').then((module) => module.GalleryModule)
   },
   {
+    path: 'ressources', 
+    loadChildren: () => import('./features/ressources/ressources.module').then((module) => module.RessourcesModule)
+  },
+  {
     path: 'tools',
     loadChildren: () => import('./features/tools/tools.module').then((module) => module.ToolsModule)
+  },
+  {
+    path: 'gear',
+    loadChildren: () => import('./features/gear/gear.module').then((module) => module.GearModule)
+  },
+  {
+    path: 'about', 
+    component: AboutComponent
   },
   {
     path: '',

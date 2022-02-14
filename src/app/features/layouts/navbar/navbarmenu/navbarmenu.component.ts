@@ -22,7 +22,7 @@ export class NavbarmenuComponent implements OnInit {
         {link: 'others', label: 'Others...'},
       ]
     },
-    {link: 'rsc', label: 'Ressources'},
+    {link: 'ressources', label: 'Ressources'},
     {link: 'tools', label: 'Tools'},
     {link: 'gear', label: 'My gear'},
     {link: 'about', label: 'About'}
