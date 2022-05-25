@@ -1,10 +1,14 @@
 <!--navbar à mettre en position: sticky-->
-<div class="header-container">
-    <navbarmenu></navbarmenu>
-</div>
+<div class="scroller"><!--class="scroller"-->
+    <div class="header-container">
+        <navbarmenu></navbarmenu>
+    </div>
 
-<router-outlet></router-outlet>
 
-<div class="footer-container">
-    <app-footer></app-footer>
+    <router-outlet></router-outlet>
+
+
+    <div class="footer-container">
+        <app-footer></app-footer>
+    </div>
 </div>

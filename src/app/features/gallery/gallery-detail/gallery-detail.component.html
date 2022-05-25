@@ -3,21 +3,22 @@
         <div class="title-container">
             <span class="title-picture text-withe">Generic Title</span>
         </div>
-        <div class="picture-container container-margin">
-            <img src="/assets/ressources/imgs/49773507818_900c2f16df_k.jpg">
-            <div class="picture-inside deep-dark-low-transp-bckg">
-                <div class="picture-icons-container">
-                    
-                </div>
+        <div class="picture-container container-margin"> 
+            <div class="glassmorph-container deep-dark-low-transp-bckg">
+                <div class="icons-container">
+                    <button class="btn-w-b-grow" pTooltip="Zoom in" tooltipPosition="bottom"><i><svg class="svg-icon-expand"></svg></i></button>
+                    <button class="btn-w-b-grow" pTooltip="Astrometry" tooltipPosition="bottom"><fa-icon [icon]="['fas', 'map-pin']" size="2x"></fa-icon></button>
+                    <button class="btn-w-b-grow" pTooltip="Sky map" tooltipPosition="bottom"><fa-icon [icon]="['fas', 'map-pin']" size="2x"></fa-icon></button>
+                </div>                
             </div>
+            <img src="/assets/ressources/imgs/49773507818_900c2f16df_k.jpg">
         </div>
-        <div class="picture-info-container container-margin">
+        <div class="picture-info-container container-margin">            
             <div class="grid-container">
                 <app-technical-sheet class="tech-grid-pos"></app-technical-sheet>
                 <app-object-sheet class="obj-grid-pos"></app-object-sheet>
                 <app-description-sheet class="descpt-grid-pos"></app-description-sheet>
             </div>
-            
         </div>
     </div>
 </div>

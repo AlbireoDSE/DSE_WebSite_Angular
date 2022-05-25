@@ -6,10 +6,12 @@ import { RessourcesComponent } from './ressources.component';
 
 //routing
 import { RessourcesRoutingModule } from './ressources-routing.module';
+import { RessourceCardComponent } from './ressource-card/ressource-card.component';
 
 @NgModule({
   declarations: [
-    RessourcesComponent
+    RessourcesComponent,
+    RessourceCardComponent
   ],
   imports: [
     CommonModule,

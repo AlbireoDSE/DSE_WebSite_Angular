@@ -6,10 +6,12 @@ import { GearComponent } from './gear.component';
 
 //routing
 import { GearRoutingModule } from './gear-routing.module';
+import { EquipmentListComponent } from './equipment-list/equipment-list.component';
 
 @NgModule({
   declarations: [
-    GearComponent
+    GearComponent,
+    EquipmentListComponent
   ],
   imports: [
     CommonModule,

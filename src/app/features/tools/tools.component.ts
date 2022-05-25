@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faCalculator } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,12 +11,22 @@ export class ToolsComponent implements OnInit {
 
   val: number;
 
-  //icons
-  faCalculator = faCalculator; //renommer la partie de gauche pour le nom dans la balise HTML 
+  toolsList: any[] = [
+    {toolName: "Calculators", faIcon: "calculator", link: "calculators"},
+    {toolName: "Astrometry", faIcon: "", link: "astrometry"},
+    {toolName: "Planetarium", icon: "", link: "planetarium"},
+  ]
 
-  constructor() { }
+  //icons
+  //faCalculator = faCalculator; //renommer la partie de gauche pour le nom dans la balise HTML 
+
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onToolClick(toolLink: string): void {
+    this.router.navigate(['tools', toolLink]);
   }
 
 }

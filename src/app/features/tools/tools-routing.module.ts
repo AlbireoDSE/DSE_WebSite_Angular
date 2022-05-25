@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
+import { AstrometryComponent } from './astrometry/astrometry.component';
+import { CalculatorsComponent } from './calculators/calculators.component';
 import { ToolsComponent } from './tools.component';
 
 const routes: Routes = [
@@ -8,13 +10,23 @@ const routes: Routes = [
        component: ToolsComponent,
        children: [
             { 
-                path:'astrometry',
-                //component: AstrometryComponent
+                path:'calculators', 
+                component: CalculatorsComponent
             },
             { 
-                path:'calculators', 
-                //component: CalculatorsComponent
-            } 
+                path:'astrometry',
+                component: AstrometryComponent
+            },
+            {
+                path: '',
+                redirectTo: 'calculators',
+                pathMatch: 'full'
+            },
+            {
+                path: '**',
+                redirectTo: 'calculators',
+                pathMatch: 'full',
+            },
        ] 
     }
     

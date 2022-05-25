@@ -7,6 +7,8 @@ body{
 
 * {
     box-sizing: border-box; //n'inclut pas le padding des éléments dans le calcul
+    //scrollbar-width: none;
+    //scrollbar-color: #c0c0c0 #00000000;
 }
 
 h1, h2, h3, h4, a, p{
@@ -15,6 +17,11 @@ h1, h2, h3, h4, a, p{
 }
 
 p{
+    margin: 0;
+    padding: 0;
+}
+
+button{
     margin: 0;
     padding: 0;
 }

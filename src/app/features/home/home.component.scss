@@ -87,6 +87,7 @@ div.homepage-container{
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
+
                     div.w-social-icon{
                 
                         width: 3.3rem;
@@ -102,22 +103,29 @@ div.homepage-container{
                         justify-content:center;
                         align-items: center;
 
+                        transition: transform 0.3s;
+
                         fa-icon.fa-social-icon{
                             color: #fff;
 
                             transition: 0.3s;
                             animation: fade 0.65s 0.65s ease-out forwards;
                             opacity: 0;
+                            
                         }
 
                         &:hover{
                             cursor: pointer;
+                            transform: scale(1.1);
 
                             fa-icon.fa-social-icon{
                                 color: rgba(255, 255, 255, 0.5);
-                            }
+                            }                            
                         }
+                        
                     } 
+
+                    
                 }
             }
         }

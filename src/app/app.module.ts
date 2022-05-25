@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //import { FooterComponent } from './features/layouts/footer/footer.component';
 
+
 import { NavbarmenuModule } from './features/layouts/navbar/navbarmenu/navbarmenu.module';
 import {FooterModule } from './features/layouts/footer/footer.module';
 

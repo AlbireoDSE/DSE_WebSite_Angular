@@ -50,6 +50,13 @@ nav.nav-container {
 
                 top: 105%;
                 left: 0;
+
+                display: flex; 
+
+                visibility: hidden;
+                opacity: 0;
+
+                transition: all .3s ease-out;
             }
 
             &:hover { //s'applique sur l'élément parent
@@ -57,7 +64,10 @@ nav.nav-container {
                 cursor: pointer;
 
                 div.dropdown-container{
-                    display: flex;                             
+                    visibility: visible;
+                    opacity: 1;
+                         
+                    //transform: translateY(100rem);
                 }
             }
         }

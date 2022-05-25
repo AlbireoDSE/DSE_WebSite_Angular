@@ -29,12 +29,15 @@ div.detail-container{
             }
         } 
         div.picture-container{
-        
+            
+            position: relative;
+
             img{
+                
                 width: 62rem;                
             }
 
-            div.picture-inside{
+            div.glassmorph-container{
                 width: 100%;
                 height: 100%;
                 
@@ -43,17 +46,56 @@ div.detail-container{
 
                 transition: all .3s ease-out;
 
-                position: relative;
-                top: -100%;
+                position: absolute;
+                //top: -100%;
+
+                display: flex;   
+                align-items: center;
+                justify-content: center;
+
+                div.icons-container{
+                    display: flex;
+                    justify-content : space-around;
+                    //background-color: #FFFFFF;
+                    min-width: 10%;
+
+                    button{
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        padding: .6rem;
+                        margin: 0 .5rem;
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                        
+                    svg.svg-icon-expand{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        background: url(../../../../assets/ressources/icons/expand.svg);
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+                    
+                
             }
 
             &:hover{
 
                 cursor: pointer;
 
-                div.picture-inside{
+                div.glassmorph-container{
                     visibility: visible;
                     opacity: 1;
+                    backdrop-filter: blur(2px) saturate(200%);
+    
                     //background-color: blueviolet;
                 }
             }

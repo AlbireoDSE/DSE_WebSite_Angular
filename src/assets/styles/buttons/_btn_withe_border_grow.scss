@@ -1,0 +1,14 @@
+button.btn-w-b-grow {
+	color: #ffffffce;
+	background-color: #00000000;
+	border: 1px solid #ffffffce;
+	border-radius: 4px;
+	padding: 0 15px;
+	cursor: pointer;
+	//height: 32px;
+	font-size: 14px;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
